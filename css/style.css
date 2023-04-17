@@ -9,7 +9,7 @@
    --light-color: #666;
    --light-white: #ccc;
    --light-bg: #f5f5f5;
-   --border: .1rem solid var(--black);
+   --border: solid 5px #eaeaef;
    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
@@ -302,6 +302,7 @@ section {
 
 .header .header-2 .flex .navbar a {
    margin: 0 1rem;
+   margin-left: 3rem;
    font-size: 2rem;
    color: var(--light-color);
 }
@@ -407,6 +408,19 @@ section {
    position: relative;
 }
 
+.products .box-container .box .selectme {
+   width: 100%;
+   border-radius: .5rem;
+   width: 100%;
+   background-color: var(--white);
+   padding: 1.2rem 1.4rem;
+   font-size: 1.8rem;
+   margin: 1rem 0;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
 .products .box-container .box .image {
    height: 25rem;
    width: 25rem;
@@ -423,16 +437,20 @@ section {
    padding: 1rem 0;
    font-size: 1.5rem;
    color: var(--black);
+   text-decoration: underline;
 }
 
 .products .box-container .box .qty {
-   width: 50%;
-   padding: 1.2rem 1.4rem;
-   border-radius: .5rem;
-   border: solid 3px #eaeaef;
-   margin: 1rem 0;
-   font-size: 2rem;
+   padding: 1rem 1rem;
+   font-size: 1.5rem;
 }
+
+.products .box-container .box .qty2 {
+   padding: 1rem 1rem;
+   font-size: 1.5rem;
+   width: 50%;
+}
+
 
 .products .box-container .box .price {
    position: absolute;
@@ -440,10 +458,10 @@ section {
    left: 1rem;
    border-radius: 2rem;
    padding: 1rem;
+   width: 35%;
    font-size: 2rem;
-   background-color: var(--purple);
-   backdrop-filter: brightness(95%);
-   color: white;
+   background-color: rgba(0, 0, 0, 0.8);
+   color: var(--white);
 }
 
 .about .flex {
@@ -456,6 +474,7 @@ section {
 
 .about .flex .image {
    flex: 1 1 40rem;
+   height: 55vh;
 }
 
 .about .flex .image img {
@@ -466,6 +485,7 @@ section {
    flex: 1 1 40rem;
    padding: 2rem;
    background-color: var(--light-bg);
+   height: 55vh;
 }
 
 .about .flex .content .btn {
@@ -688,8 +708,10 @@ section {
 }
 
 .shopping-cart .box-container .box .fa-times:hover {
-   background-color: var(--black);
+   background-color: var(--white);
 }
+
+
 
 .shopping-cart .box-container .box img {
    height: 25rem;
@@ -952,7 +974,7 @@ section {
 
 .footer .credit {
    text-align: center;
-   font-size: 2rem;
+   font-size: 1.5rem;
    color: var(--light-color);
    border-top: var(--border);
    margin-top: 2.5rem;
