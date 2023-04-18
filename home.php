@@ -105,20 +105,6 @@ if (isset($_POST['add_to_cart'])) {
 
    </section>
 
-   <section class="about">
-
-      <div class="flex">
-
-         <div class="content">
-            <h3>About Us</h3>
-            <p>We're just a small bookstore, trying to get it done.</p>
-            <a href="about.php" class="btn">Read more</a>
-         </div>
-
-      </div>
-
-   </section>
-
    <section class="home-contact">
 
       <div class="content">
